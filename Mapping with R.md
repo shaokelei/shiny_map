@@ -1,25 +1,16 @@
 ---
-title: "Mapping with R"
-author:
-- name: Shaoke Lei
-  email: shaokelei@gmail.com
   output: github_document
 ---
 
 
-#```{r setup, include = FALSE}
-#knitr::opts_chunk$set(fig.width = 12, fig.height = 8, autodep = TRUE, message = FALSE, warning = FALSE)
-#options(width = 150)
-#```
-
-
-```{r include = FALSE}
-wd <- "C:/Users/SHAOKE/OneDrive - The University of Melbourne/x. MCRI/Mapping_share/Mapping with R"
-```
-
 
 # Digital boundaries files
 Australian Statistical Geography Standard (ASGS) digital boundaries are available in either the OGC GeoPackage, or ESRI shapefile formats, which are available to download from [the ABS website](https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files). In the following, we use shapefile to create the map.
+
+# Download the shapefile and save it to the path "wd"
+```{r include = FALSE}
+wd <- ""
+```
 
 # Mapping with plot
 
@@ -48,7 +39,6 @@ plot(vic["Number"], breaks = "quantile", nbreaks = 5, pal = pal)
 
 ```{r include = FALSE}
 rm(list=ls())
-wd <- "C:/Users/SHAOKE/OneDrive - The University of Melbourne/x. MCRI/Mapping_share/Mapping with R"
 ```
 
 # Mapping with ggplot2
@@ -123,7 +113,6 @@ VIC_poa
 
 ```{r include = FALSE}
 rm(list=ls())
-wd <- "C:/Users/SHAOKE/OneDrive - The University of Melbourne/x. MCRI/Mapping_share/Mapping with R"
 ```
 
 ```{r leaflet}
@@ -180,7 +169,6 @@ vic_map
 
 ```{r include = FALSE}
 rm(list=ls())
-wd <- "C:/Users/SHAOKE/OneDrive - The University of Melbourne/x. MCRI/Mapping_share/Mapping with R"
 ```
 
 ```{r shiny}
